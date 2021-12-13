@@ -132,28 +132,181 @@ cache_size['3'] = 8 mb;
 
 ### Результаты
 
-Ниже представлен формат и пример отчета:
+Ниже представлен мой отчет:
 
-```yaml
-investigation:                                       |  investigaion:
-  travel_variant: <вариант_прохода>                  |    travel_order: "direction"
-  experiments:                                       |    experiments:
-  - experiment:                                      |    - experiment:
-      number:                                        |        number: 1
-      input_data:                                    |        input_data:
-        buffer_size: <размер_буфера>                 |          buffer_size: "1mb"
-      results:                                       |        results:
-        duration: <продолжительность>                |          duration: "1ns"
-  - experiment:                                      |    - experiment:
-      number: <номер_эксперимента>                   |        number: 2
-      input_data:                                    |        input_data:
-        buffer_size: <размер_буфера>                 |          buffer_size: "2mb"
-      results:                                       |        results:
-        duration: <продолжительность>                |          duration: "2ns"
-                                                     |
-investigation:                                       |  investigation:
-...                                                  |  ...
-```
+Investigation:
+	travel variant: "direction"
+	experiments: 
+	- experiment: 
+		number: 1
+		input data: 
+			buffer size: "256Kb"
+		results: 
+			duration: "4.925ms"
+	- experiment: 
+		number: 2
+		input data: 
+			buffer size: "512Kb"
+		results: 
+			duration: "9.166ms"
+	- experiment: 
+		number: 3
+		input data: 
+			buffer size: "1Mb"
+		results: 
+			duration: "18.784ms"
+	- experiment: 
+		number: 4
+		input data: 
+			buffer size: "2Mb"
+		results: 
+			duration: "36.338ms"
+	- experiment: 
+		number: 5
+		input data: 
+			buffer size: "4Mb"
+		results: 
+			duration: "77.069ms"
+	- experiment: 
+		number: 6
+		input data: 
+			buffer size: "8Mb"
+		results: 
+			duration: "146.61ms"
+	- experiment: 
+		number: 7
+		input data: 
+			buffer size: "16Mb"
+		results: 
+			duration: "284.092ms"
+	- experiment: 
+		number: 8
+		input data: 
+			buffer size: "32Mb"
+		results: 
+			duration: "561.478ms"
+	- experiment: 
+		number: 9
+		input data: 
+			buffer size: "48Mb"
+		results: 
+			duration: "840.995ms"
+
+Investigation:
+	travel variant: "reverse"
+	experiments: 
+	- experiment: 
+		number: 1
+		input data: 
+			buffer size: "256Kb"
+		results: 
+			duration: "4.023ms"
+	- experiment: 
+		number: 2
+		input data: 
+			buffer size: "512Kb"
+		results: 
+			duration: "8.099ms"
+	- experiment: 
+		number: 3
+		input data: 
+			buffer size: "1Mb"
+		results: 
+			duration: "16.209ms"
+	- experiment: 
+		number: 4
+		input data: 
+			buffer size: "2Mb"
+		results: 
+			duration: "32.391ms"
+	- experiment: 
+		number: 5
+		input data: 
+			buffer size: "4Mb"
+		results: 
+			duration: "65.967ms"
+	- experiment: 
+		number: 6
+		input data: 
+			buffer size: "8Mb"
+		results: 
+			duration: "130.718ms"
+	- experiment: 
+		number: 7
+		input data: 
+			buffer size: "16Mb"
+		results: 
+			duration: "264.475ms"
+	- experiment: 
+		number: 8
+		input data: 
+			buffer size: "32Mb"
+		results: 
+			duration: "530.605ms"
+	- experiment: 
+		number: 9
+		input data: 
+			buffer size: "48Mb"
+		results: 
+			duration: "809.568ms"
+
+Investigation:
+	travel variant: "random"
+	experiments: 
+	- experiment: 
+		number: 1
+		input data: 
+			buffer size: "256Kb"
+		results: 
+			duration: "67.803ms"
+	- experiment: 
+		number: 2
+		input data: 
+			buffer size: "512Kb"
+		results: 
+			duration: "141.337ms"
+	- experiment: 
+		number: 3
+		input data: 
+			buffer size: "1Mb"
+		results: 
+			duration: "178.549ms"
+	- experiment: 
+		number: 4
+		input data: 
+			buffer size: "2Mb"
+		results: 
+			duration: "270.693ms"
+	- experiment: 
+		number: 5
+		input data: 
+			buffer size: "4Mb"
+		results: 
+			duration: "869.46ms"
+	- experiment: 
+		number: 6
+		input data: 
+			buffer size: "8Mb"
+		results: 
+			duration: "2.38928s"
+	- experiment: 
+		number: 7
+		input data: 
+			buffer size: "16Mb"
+		results: 
+			duration: "5.03587s"
+	- experiment: 
+		number: 8
+		input data: 
+			buffer size: "32Mb"
+		results: 
+			duration: "11.5064s"
+	- experiment: 
+		number: 9
+		input data: 
+			buffer size: "48Mb"
+		results: 
+			duration: "18.6823s"
 
 ### Рекомендации
 
