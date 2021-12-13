@@ -1,7 +1,7 @@
 #include <cashes.hpp>
 
 int main() {
-  cash_test Direction = cash_test("direction");
+  cash_test Direction = cash_test("straight");
   Direction.straight();
   Direction.output(std::cout);
   cash_test Reverse = cash_test("reverse");

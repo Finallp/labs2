@@ -136,7 +136,7 @@ cache_size['3'] = 8 mb;
 
 ```cpp
 Investigation:
-	travel variant: "direction"
+	travel variant: "straight"
 	experiments: 
 	- experiment: 
 		number: 1
