@@ -134,6 +134,7 @@ cache_size['3'] = 8 mb;
 
 Ниже представлен мой отчет:
 
+```cpp
 Investigation:
 	travel variant: "direction"
 	experiments: 
@@ -307,7 +308,7 @@ Investigation:
 			buffer size: "48Mb"
 		results: 
 			duration: "18.6823s"
-
+```
 ### Рекомендации
 
 При создание неиспользуемых переменных для считывание данных из буфера можно использовать аттрибут `[[maybe_unused]]`
